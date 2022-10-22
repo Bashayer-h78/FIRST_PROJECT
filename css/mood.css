@@ -1,0 +1,208 @@
+:root{
+    --main-color :#1a024e;
+    --white: #f5f6fa;
+    --soft-gray :#b2bec3;
+    --dark-gray: #2d3436;
+    --font-size : 16px;
+}
+body{
+    background-color: #6942cc;
+}
+/* body{
+    height: 5000px;
+} */
+
+ header .overlay{
+    height: 100%;
+    opacity: 0.5;
+ }
+nav a {
+    color: #f5f6fa !important;
+
+}
+nav a span{
+    color:  var(--main-color);
+}
+
+header{
+    background-image: url(../imgs/slide-1.jpg); 
+    height: 90vh;
+}
+header .caption{
+    color: var(--white) ;
+}
+header .caption h1{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+header .caption span{
+ color: var(--main-color);
+}
+
+header .caption a{
+    border:1px solid var(--soft-gray) !important;
+    color: var(--white) ;
+
+}
+
+header .caption a:hover{
+    background-color: var(--main-color);
+    border:1px solid var(--main-color) !important;
+}
+
+
+/* ========================================== start our work style ========================================= */
+section .caption h1 span{
+    color: var(--main-color);
+}
+section  a:hover{
+    background-color: var(--main-color) !important;
+ border: 1px solid var(--main-color) !important;
+ color: var(--white) !important;
+}
+section .work .overlay-cap {
+    opacity: 0%;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    height:100%;
+    padding-top: 14%;
+    color: var(--white) ;
+    background-color: rgba(232, 65, 24,0.5);
+
+}
+
+section img{
+    height: 37vh;
+
+}
+section .work .overlay-cap:hover{
+    /* display: block; */
+    opacity: 100%;
+    /* visibility: visible; */
+    /* display: block; */
+   
+
+    /* opacity: 0.5; */
+
+
+}
+section .work .overlay-cap button{
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+/* ========================================== start feature style ========================================= */
+.feature .box div{
+    border : 1px solid var(--main-color) !important;
+    color: var(--main-color);
+    width: 8vw;
+    height: 13vh;
+    /* padding-top: 8%; */
+    line-height: 15vh;
+     margin: auto;
+     transition: all 0.5s ease-in-out;
+}
+.feature .box div:hover{
+  background-color: var(--main-color);
+    color: var(--white);
+
+}
+
+/* ========================================== start our-team style ========================================= */
+.ourteam .member img{
+    height: 30vh;
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out;
+}
+.ourteam .member img:hover{
+    
+    filter: grayscale(0%);
+}
+.ourteam .member img:hover ~ .icons .fa-facebook{
+    color: #1877f2;
+}
+.ourteam .member img:hover ~ .icons .fa-twitter{
+    color: #1da1f2;
+}
+.ourteam .member img:hover ~ .icons .fa-google-plus{
+    color: #dd4b39;
+}
+.ourteam .member img:hover ~ .icons .fa-youtube{
+    color: #ff0000;
+}
+
+/* ========================================== start contact us style ========================================= */
+
+.contact-us {
+    background-image: url(../imgs/contact-bg.jpg);
+    height: 70vh;
+    z-index: 1;
+   
+}
+.contact-us .caption{
+    color: var(--white);
+}
+.contact-us .caption span{
+    color: var(--main-color);
+}
+.contact-us form button{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.contact-us .icons{
+    font-size: calc( var(--font-size) + 10px);
+}
+.contact-us .icons .fa-facebook{
+    color: #1877f2;
+}
+.contact-us .icons .fa-google-plus{
+    color: #dd4b39;
+}
+.contact-us .icons .fa-twitter{
+    color: #1da1f2;
+}
+.contact-us .icons .fa-youtube{
+    color: #ff0000;
+}
+
+
+.contact-us form input , textarea{
+    background-color: transparent !important;
+}
+
+.contact-us .overlay{
+    background-color: var(--dark-gray);
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+/* =============================================================== */
+  .up
+  {
+     
+    color: aliceblue;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right:-60px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.3s;
+    z-index: 2;
+     
+ } 
+ 
+  .show {
+    right: 20px;
+    
+  }
+  .moon-icon{
+    display: none;
+  }
+  #myDIV{
+    display: flex;
+  }
